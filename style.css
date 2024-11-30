@@ -1,11 +1,140 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 }
 
-body{
-    width: 100%;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
     height: 100vh;
+    padding: 10px;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 90vh;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.chat-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 10px;
+}
+
+.user-chat-box,
+.ai-chat-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-chat-box {
+    justify-content: flex-end;
+}
+
+.ai-chat-box {
+    justify-content: flex-start;
+}
+
+.chat-area {
+    max-width: 75%;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #fff;
+    word-wrap: break-word;
+}
+
+.user-chat-area {
+    background-color: rgb(182, 198, 199);
+    border-radius: 20px 0 20px 20px;
+    color: #1a1a1a;
+    box-shadow: 2px 2px 10px rgb(105, 105, 105);
+}
+
+.ai-chat-area {
+    background-color:rgb(255, 218, 185)
+    border-radius: 0 20px 20px 20px;
+    box-shadow: 2px 2px 10px rgb(105, 105, 105);
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+#human{
+    filter: drop-shadow(2px 2px 10px rgb(139, 232, 232));
+}
+
+#AI{
+    filter: drop-shadow(2px 2px 10px rgb(213, 136, 136));
+}
+.prompt-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d6d0d092;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    margin-top: auto; /* Push prompt-area to the bottom */
+    gap: 10px;
+}
+
+.prompt-area input {
+    flex: 1; /* Allow the input field to take available space */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2d2d2d;
+    color: #fff;
+    outline: none;
+    font-size: 1rem;
+}
+
+.prompt-area input::placeholder {
+    color: #888;
+}
+
+.prompt-area button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.prompt-area button:hover {
+    background-color: #fc0000;
+}
+
+/* Ensure chat-container adjusts dynamically */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

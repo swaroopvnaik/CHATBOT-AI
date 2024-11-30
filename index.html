@@ -3,17 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Chat UI</title>
 </head>
 <body>
-
     <div class="chat-container">
+        <!-- User Chat -->
+        <div class="user-chat-box">
+            <div class="user-chat-area chat-area">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, soluta!
+            </div>
+            <img src="human.png" alt="User Avatar" id="human">
+        </div>
 
-
+        <!-- AI Chat -->
+        <div class="ai-chat-box">
+            <img src="robot image.jpg" alt="AI Avatar" id="AI">
+            <div class="ai-chat-area chat-area">
+                Hello! How can I assist you today? I'm here to help.
+            </div>
+        </div>
+        <div class="prompt-area">
+            <input type="text" id="prompt" placeholder="ASK ME....😉">
+            <button id="submit"><img src="" alt=""></button>
+        </div>
     </div>
-    <div class="promptarea">
-        
-    </div>
-    <script src="script.js"></script>
 </body>
 </html>
