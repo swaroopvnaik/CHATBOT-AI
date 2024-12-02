@@ -5,7 +5,10 @@ let imagebtn = document.querySelector("#image")
 let image = document.querySelector("#image img")
 let imageinput = document.querySelector("#image input")
 
-const API_url ="https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyCoj_9t2jKaVKmd25TUpOS4mNpcmeQFDyo"
+import dotenv from 'dotenv';
+dotenv.config();
+
+const API_url = process.env.link;
 let user = {
     message:null,
     file:{
