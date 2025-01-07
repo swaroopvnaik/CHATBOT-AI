@@ -5,7 +5,7 @@ let imagebtn = document.querySelector("#image")
 let image = document.querySelector("#image img")
 let imageinput = document.querySelector("#image input")
 
-const name="AIzaSyCoj_9t2jKaVKmd25TUpOS4mNpcmeQFDyo";
+const name="AIzaSyCFBqSuvGEQXn5KXExR7vPpSp8tepGa9Ps";
 
 
 
